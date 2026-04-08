@@ -1,0 +1,55 @@
+.app-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.main-content {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+}
+
+.movies-section {
+    position: relative;
+    z-index: 2;
+    margin-top: 4rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--gold-accent);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--gold-muted);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+
+    /* Gentle float for section titles */
+    animation: levitate var(--float-timing) ease-in-out infinite;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+    padding-bottom: 4rem;
+}
+
+@keyframes levitate {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}

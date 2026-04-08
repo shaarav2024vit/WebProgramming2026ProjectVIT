@@ -1,0 +1,123 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    z-index: 100;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: rgba(5, 5, 5, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--gold-accent);
+    text-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: var(--text-main);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: var(--gold-accent);
+}
+
+.nav-links li a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gold-accent);
+    box-shadow: 0 0 8px var(--gold-accent);
+    border-radius: 2px;
+}
+
+.search-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 2rem;
+}
+
+.search-input {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: var(--text-main);
+    outline: none;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.search-input:focus {
+    border-color: var(--gold-accent);
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.search-btn {
+    background: transparent;
+    color: var(--gold-accent);
+    border: 1px solid var(--gold-muted);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.search-btn:hover {
+    background: var(--gold-muted);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.4);
+}
+
+@media (max-width: 900px) {
+    .navbar-content {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .search-form {
+        margin-left: 0;
+    }
+}

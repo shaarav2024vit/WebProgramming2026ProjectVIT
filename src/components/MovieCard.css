@@ -1,0 +1,111 @@
+.movie-card {
+    perspective: 1000px;
+}
+
+.movie-card-inner {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(197, 160, 89, 0.1);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-card-inner:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7), 0 0 15px rgba(197, 160, 89, 0.3);
+    z-index: 10;
+}
+
+.movie-poster-container {
+    position: relative;
+    width: 100%;
+    padding-top: 150%;
+    /* 2:3 aspect ratio */
+    overflow: hidden;
+}
+
+.movie-poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.movie-card-inner:hover .movie-poster {
+    transform: scale(1.05);
+}
+
+.movie-rating {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: var(--gold-accent);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: 1px solid var(--gold-muted);
+    backdrop-filter: blur(4px);
+}
+
+.movie-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-title {
+    margin: 0 0 0.8rem 0;
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.movie-review {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+    flex: 1;
+}
+
+.read-more-btn {
+    background: transparent;
+    color: var(--gold-accent);
+    border: 1px solid var(--gold-muted);
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.read-more-btn:hover {
+    background: var(--gold-muted);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.4);
+}
+
+@keyframes float-card {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
