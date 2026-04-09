@@ -76,7 +76,73 @@ export const featuredMovies = [
         director: "Ridley Scott",
         review: "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
         delay: "1.1s"
+    },
+    {
+        id: 13,
+        title: "Interstellar",
+        poster: "https://imgs.search.brave.com/rp1qERJljBOAYO-WAOaz5RhmnvnwZv3xjV5bIeVDiQI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODF2MU5NSkJybEwu/anBn",
+        rating: "8.7/10",
+        genre: "Sci-Fi",
+        length: "2h 49m",
+        language: "English",
+        year: 2014,
+        director: "Christopher Nolan",
+        review: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+        delay: "0.4s"
+    },
+    {
+        id: 14,
+        title: "Fight Club",
+        poster: "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
+        rating: "8.8/10",
+        genre: "Drama",
+        length: "2h 19m",
+        language: "English",
+        year: 1999,
+        director: "David Fincher",
+        review: "An insomniac office worker forms an underground fight club with a soap maker.",
+        delay: "0.9s"
+    },
+    {
+        id: 15,
+        title: "Joker",
+        poster: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+        rating: "8.4/10",
+        genre: "Crime",
+        length: "2h 2m",
+        language: "English",
+        year: 2019,
+        director: "Todd Phillips",
+        review: "A mentally troubled comedian embarks on a downward spiral into revolution and crime.",
+        delay: "0.6s"
+    },
+    {
+        id: 16,
+        title: "Avengers: Endgame",
+        poster: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+        rating: "8.4/10",
+        genre: "Action",
+        length: "3h 1m",
+        language: "English",
+        year: 2019,
+        director: "Anthony Russo, Joe Russo",
+        review: "After the devastating events of Infinity War, the Avengers assemble once more.",
+        delay: "1s"
+    },
+    {
+        id: 17,
+        title: "3 Idiots",
+        poster: "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8Tew.jpg",
+        rating: "8.4/10",
+        genre: "Comedy",
+        length: "2h 50m",
+        language: "Hindi",
+        year: 2009,
+        director: "Rajkumar Hirani",
+        review: "Two friends search for their long lost companion while revisiting college memories.",
+        delay: "0.3s"
     }
+
 ];
 
 export const recentlyAdded = [
@@ -157,6 +223,71 @@ export const recentlyAdded = [
         director: "Unknown Director",
         review: "A masterpiece of cinema featuring a thrilling narrative and spectacular performances. (Poster image pending)",
         delay: "1.3s"
+    },
+    {
+        id: 18,
+        title: "Oppenheimer",
+        poster: "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
+        rating: "8.6/10",
+        genre: "Biography",
+        length: "3h 0m",
+        language: "English",
+        year: 2023,
+        director: "Christopher Nolan",
+        review: "The story of J. Robert Oppenheimer and the development of the atomic bomb.",
+        delay: "0.5s"
+    },
+    {
+        id: 19,
+        title: "Leo",
+        poster: "https://image.tmdb.org/t/p/w500/pD6sL4vntUOXHmuvJPPZAgvyfd9.jpg",
+        rating: "7.8/10",
+        genre: "Action",
+        length: "2h 44m",
+        language: "Tamil",
+        year: 2023,
+        director: "Lokesh Kanagaraj",
+        review: "A mild-mannered cafe owner gets dragged into a world of violence and crime.",
+        delay: "1.1s"
+    },
+    {
+        id: 20,
+        title: "KGF: Chapter 2",
+        poster: "https://image.tmdb.org/t/p/w500/khNv3FiJ2Y6U0H9n3l6p1J3s4oS.jpg",
+        rating: "8.3/10",
+        genre: "Action",
+        length: "2h 48m",
+        language: "Kannada",
+        year: 2022,
+        director: "Prashanth Neel",
+        review: "Rocky takes control of the KGF empire but faces new enemies and challenges.",
+        delay: "0.7s"
+    },
+    {
+        id: 21,
+        title: "The Batman",
+        poster: "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+        rating: "7.9/10",
+        genre: "Crime",
+        length: "2h 56m",
+        language: "English",
+        year: 2022,
+        director: "Matt Reeves",
+        review: "Batman uncovers corruption in Gotham while pursuing the Riddler.",
+        delay: "0.4s"
+    },
+    {
+        id: 22,
+        title: "Your Name",
+        poster: "https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg",
+        rating: "8.4/10",
+        genre: "Animation",
+        length: "1h 52m",
+        language: "Japanese",
+        year: 2016,
+        director: "Makoto Shinkai",
+        review: "Two strangers find themselves mysteriously linked through dreams.",
+        delay: "0.9s"
     }
 ];
 
