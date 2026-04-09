@@ -37,11 +37,32 @@ export default function MovieDetail() {
                         <span className="director-label">Director:</span> {movie.director}
                     </div>
 
+                    {movie.trailer && (
+                        <a href={movie.trailer} target="_blank" rel="noopener noreferrer" className="trailer-btn">
+                            <span className="play-icon">▶</span> Watch Trailer
+                        </a>
+                    )}
+
                     <p className="movie-detail-description">
                         {movie.review}
                         <br /><br />
-                        Immerse yourself into the world of {movie.title}. With stunning visuals and breathtaking acting, this film takes you on a journey through the perspectives of its deeply written characters. Sit back and see why it received {movie.rating}.
+                        Immerse yourself into the world of {movie.title}. With stunning visuals and breathtaking acting, this film takes you on a journey through the perspectives of its deeply written characters.
                     </p>
+
+                    {movie.cast && (
+                        <div className="movie-cast-section">
+                            <h3 className="cast-title">Meet the Cast</h3>
+                            <div className="cast-grid">
+                                {movie.cast.map((actor, index) => (
+                                    <div key={index} className="cast-member">
+                                        <div className="actor-name">{actor.name}</div>
+                                        <div className="actor-role">{actor.role}</div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
                     <Link to="/" className="back-link">&larr; Back Highlights</Link>
                 </div>
             </div>

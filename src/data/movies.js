@@ -9,21 +9,14 @@ export const featuredMovies = [
         language: "English",
         year: 2010,
         director: "Christopher Nolan",
+        trailer: "https://www.youtube.com/watch?v=YoHD9XEInc0",
+        cast: [
+            { name: "Leonardo DiCaprio", role: "Cobb" },
+            { name: "Joseph Gordon-Levitt", role: "Arthur" },
+            { name: "Elliot Page", role: "Ariadne" }
+        ],
         review: "A thief who steals corporate secrets through dream-sharing technology...",
         delay: "0s"
-    },
-    {
-        id: 2,
-        title: "The Dark Knight",
-        poster: "https://imgs.search.brave.com/Gk8lNNEm6bmFKu-em4VBSlePYjtTrFzk9HwixINB3N0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/MS8xYy9UaGVfRGFy/a19LbmlnaHRfJTI4/MjAwOF9maWxtJTI5/LmpwZy81MTJweC1U/aGVfRGFya19Lbmln/aHRfJTI4MjAwOF9m/aWxtJTI5LmpwZw",
-        rating: "9.0/10",
-        genre: "Action",
-        length: "2h 32m",
-        language: "English",
-        year: 2008,
-        director: "Christopher Nolan",
-        review: "The Joker wreaks havoc and chaos on the people of Gotham...",
-        delay: "0.5s"
     },
     {
         id: 3,
@@ -35,6 +28,12 @@ export const featuredMovies = [
         language: "Korean",
         year: 2019,
         director: "Bong Joon-ho",
+        trailer: "https://www.youtube.com/watch?v=5xH0HfJHsaY",
+        cast: [
+            { name: "Song Kang-ho", role: "Kim Ki-taek" },
+            { name: "Lee Sun-kyun", role: "Park Dong-ik" },
+            { name: "Cho Yeo-jeong", role: "Yeon-kyo" }
+        ],
         review: "Greed and class discrimination threaten a newly formed symbiotic relationship...",
         delay: "1s"
     },
@@ -48,6 +47,12 @@ export const featuredMovies = [
         language: "English",
         year: 2014,
         director: "Chad Stahelski",
+        trailer: "https://www.youtube.com/watch?v=2g811Eo7K8U",
+        cast: [
+            { name: "Keanu Reeves", role: "John Wick" },
+            { name: "Michael Nyqvist", role: "Viggo Tarasov" },
+            { name: "Alfie Allen", role: "Iosef Tarasov" }
+        ],
         review: "An ex-hitman comes out of retirement to track down the gangsters that took everything from him.",
         delay: "0.1s"
     },
@@ -61,6 +66,12 @@ export const featuredMovies = [
         language: "English",
         year: 2012,
         director: "Joss Whedon",
+        trailer: "https://www.youtube.com/watch?v=eOrNdBpGMv8",
+        cast: [
+            { name: "Robert Downey Jr.", role: "Iron Man" },
+            { name: "Chris Evans", role: "Captain America" },
+            { name: "Scarlett Johansson", role: "Black Widow" }
+        ],
         review: "Earth's mightiest heroes must come together and learn to fight as a team to stop the mischievous Loki and his alien army.",
         delay: "0.6s"
     },
@@ -74,6 +85,12 @@ export const featuredMovies = [
         language: "English",
         year: 2015,
         director: "Ridley Scott",
+        trailer: "https://www.youtube.com/watch?v=ej3ioOneTy8",
+        cast: [
+            { name: "Matt Damon", role: "Mark Watney" },
+            { name: "Jessica Chastain", role: "Commander Lewis" },
+            { name: "Jeff Daniels", role: "Teddy Sanders" }
+        ],
         review: "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive.",
         delay: "1.1s"
     },
@@ -87,8 +104,33 @@ export const featuredMovies = [
         language: "English",
         year: 2014,
         director: "Christopher Nolan",
+        trailer: "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+        cast: [
+            { name: "Matthew McConaughey", role: "Cooper" },
+            { name: "Anne Hathaway", role: "Brand" },
+            { name: "Jessica Chastain", role: "Murph" }
+        ],
         review: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
         delay: "0.4s"
+    },
+    {
+        id: 2,
+        title: "The Dark Knight",
+        poster: "https://imgs.search.brave.com/p1PhqAcSVp7jhE-oDUEupSZdQ68EQfv_hC7bQSTjj7c/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pcnMu/d3d3Lndhcm5lcmJy/b3MtaW5kaWEuY29t/L2tleWFydC1qcGVn/L21vdmllcy9tZWRp/YS9icm93c2VyL2Rh/cmtfa25pZ2h0X2tl/eWFydC5qcGc",
+        rating: "9.0/10",
+        genre: "Action",
+        length: "2h 32m",
+        language: "English",
+        year: 2008,
+        director: "Christopher Nolan",
+        trailer: "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+        cast: [
+            { name: "Christian Bale", role: "Bruce Wayne" },
+            { name: "Heath Ledger", role: "Joker" },
+            { name: "Aaron Eckhart", role: "Harvey Dent" }
+        ],
+        review: "The Joker wreaks havoc and chaos on the people of Gotham...",
+        delay: "0.5s"
     },
     {
         id: 14,
@@ -100,6 +142,12 @@ export const featuredMovies = [
         language: "English",
         year: 1999,
         director: "David Fincher",
+        trailer: "https://www.youtube.com/watch?v=SUXWAEX2jlg",
+        cast: [
+            { name: "Brad Pitt", role: "Tyler Durden" },
+            { name: "Edward Norton", role: "Narrator" },
+            { name: "Helena Bonham Carter", role: "Marla Singer" }
+        ],
         review: "An insomniac office worker forms an underground fight club with a soap maker.",
         delay: "0.9s"
     },
@@ -113,6 +161,12 @@ export const featuredMovies = [
         language: "English",
         year: 2019,
         director: "Todd Phillips",
+        trailer: "https://www.youtube.com/watch?v=z6AhpOGtL5g",
+        cast: [
+            { name: "Joaquin Phoenix", role: "Arthur Fleck" },
+            { name: "Robert De Niro", role: "Murray Franklin" },
+            { name: "Zazie Beetz", role: "Sophie Dumond" }
+        ],
         review: "A mentally troubled comedian embarks on a downward spiral into revolution and crime.",
         delay: "0.6s"
     },
@@ -126,6 +180,12 @@ export const featuredMovies = [
         language: "English",
         year: 2019,
         director: "Anthony Russo, Joe Russo",
+        trailer: "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+        cast: [
+            { name: "Robert Downey Jr.", role: "Iron Man" },
+            { name: "Chris Evans", role: "Captain America" },
+            { name: "Chris Hemsworth", role: "Thor" }
+        ],
         review: "After the devastating events of Infinity War, the Avengers assemble once more.",
         delay: "1s"
     },
@@ -139,6 +199,12 @@ export const featuredMovies = [
         language: "Hindi",
         year: 2009,
         director: "Rajkumar Hirani",
+        trailer: "https://www.youtube.com/watch?v=K0eDlFX9GMc",
+        cast: [
+            { name: "Aamir Khan", role: "Rancho" },
+            { name: "R. Madhavan", role: "Farhan" },
+            { name: "Sharman Joshi", role: "Raju" }
+        ],
         review: "Two friends search for their long lost companion while revisiting college memories.",
         delay: "0.3s"
     }
@@ -156,6 +222,12 @@ export const recentlyAdded = [
         language: "English",
         year: 2026,
         director: "Phil Lord, Christopher Miller",
+        trailer: "https://www.youtube.com/watch?v=bfG0WnX0l1M",
+        cast: [
+            { name: "Ryan Gosling", role: "Ryland Grace" },
+            { name: "Sandra Hüller", role: "Eva Stratt" },
+            { name: "Unknown", role: "TBD" }
+        ],
         review: "A lone astronaut must save the Earth from disaster in this upcoming sci-fi thriller based on the hit novel by Andy Weir.",
         delay: "0.3s"
     },
@@ -169,6 +241,12 @@ export const recentlyAdded = [
         language: "English",
         year: 2021,
         director: "Denis Villeneuve",
+        trailer: "https://www.youtube.com/watch?v=n9xhJrPXop4",
+        cast: [
+            { name: "Timothée Chalamet", role: "Paul Atreides" },
+            { name: "Zendaya", role: "Chani" },
+            { name: "Oscar Isaac", role: "Duke Leto" }
+        ],
         review: "A brilliant young man must travel to the most dangerous planet to ensure the future of his family...",
         delay: "0.2s"
     },
@@ -182,6 +260,12 @@ export const recentlyAdded = [
         language: "English",
         year: 2022,
         director: "Daniel Kwan",
+        trailer: "https://www.youtube.com/watch?v=wxN1T1uxQ2g",
+        cast: [
+            { name: "Michelle Yeoh", role: "Evelyn" },
+            { name: "Ke Huy Quan", role: "Waymond" },
+            { name: "Stephanie Hsu", role: "Joy" }
+        ],
         review: "An aging immigrant is swept up in an insane adventure to save the world...",
         delay: "0.7s"
     },
@@ -195,6 +279,12 @@ export const recentlyAdded = [
         language: "English",
         year: 2021,
         director: "Jon Watts",
+        trailer: "https://www.youtube.com/watch?v=JfVOs4VSpmA",
+        cast: [
+            { name: "Tom Holland", role: "Spider-Man" },
+            { name: "Zendaya", role: "MJ" },
+            { name: "Benedict Cumberbatch", role: "Doctor Strange" }
+        ],
         review: "Peter asks Doctor Strange for help, but a spell gone wrong brings dangerous foes...",
         delay: "1.2s"
     },
@@ -208,6 +298,12 @@ export const recentlyAdded = [
         language: "English",
         year: 1972,
         director: "Francis Ford Coppola",
+        trailer: "https://www.youtube.com/watch?v=sY1S34973zA",
+        cast: [
+            { name: "Marlon Brando", role: "Don Vito Corleone" },
+            { name: "Al Pacino", role: "Michael Corleone" },
+            { name: "James Caan", role: "Sonny" }
+        ],
         review: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
         delay: "0.8s"
     },
@@ -221,6 +317,11 @@ export const recentlyAdded = [
         language: "Hindi",
         year: 2020,
         director: "Unknown Director",
+        trailer: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        cast: [
+            { name: "Unknown", role: "Lead" },
+            { name: "Unknown", role: "Supporting" }
+        ],
         review: "A masterpiece of cinema featuring a thrilling narrative and spectacular performances. (Poster image pending)",
         delay: "1.3s"
     },
@@ -234,34 +335,33 @@ export const recentlyAdded = [
         language: "English",
         year: 2023,
         director: "Christopher Nolan",
+        trailer: "https://www.youtube.com/watch?v=uYPbbksJxIg",
+        cast: [
+            { name: "Cillian Murphy", role: "Oppenheimer" },
+            { name: "Emily Blunt", role: "Kitty" },
+            { name: "Robert Downey Jr.", role: "Lewis Strauss" }
+        ],
         review: "The story of J. Robert Oppenheimer and the development of the atomic bomb.",
         delay: "0.5s"
     },
     {
         id: 19,
-        title: "Leo",
-        poster: "https://image.tmdb.org/t/p/w500/pD6sL4vntUOXHmuvJPPZAgvyfd9.jpg",
-        rating: "7.8/10",
-        genre: "Action",
-        length: "2h 44m",
-        language: "Tamil",
-        year: 2023,
-        director: "Lokesh Kanagaraj",
-        review: "A mild-mannered cafe owner gets dragged into a world of violence and crime.",
-        delay: "1.1s"
-    },
-    {
-        id: 20,
-        title: "KGF: Chapter 2",
-        poster: "https://image.tmdb.org/t/p/w500/khNv3FiJ2Y6U0H9n3l6p1J3s4oS.jpg",
+        title: "Top Gun: Maverick",
+        poster: "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
         rating: "8.3/10",
         genre: "Action",
-        length: "2h 48m",
-        language: "Kannada",
+        length: "2h 10m",
+        language: "English",
         year: 2022,
-        director: "Prashanth Neel",
-        review: "Rocky takes control of the KGF empire but faces new enemies and challenges.",
-        delay: "0.7s"
+        director: "Joseph Kosinski",
+        trailer: "https://www.youtube.com/watch?v=giXco2jaZ_4",
+        cast: [
+            { name: "Tom Cruise", role: "Maverick" },
+            { name: "Miles Teller", role: "Rooster" },
+            { name: "Jennifer Connelly", role: "Penny" }
+        ],
+        review: "After more than thirty years of service, Maverick is still pushing the envelope as a top naval aviator.",
+        delay: "1s"
     },
     {
         id: 21,
@@ -273,6 +373,12 @@ export const recentlyAdded = [
         language: "English",
         year: 2022,
         director: "Matt Reeves",
+        trailer: "https://www.youtube.com/watch?v=mqqft2x_Aa4",
+        cast: [
+            { name: "Robert Pattinson", role: "Batman" },
+            { name: "Zoë Kravitz", role: "Catwoman" },
+            { name: "Paul Dano", role: "Riddler" }
+        ],
         review: "Batman uncovers corruption in Gotham while pursuing the Riddler.",
         delay: "0.4s"
     },
@@ -286,6 +392,11 @@ export const recentlyAdded = [
         language: "Japanese",
         year: 2016,
         director: "Makoto Shinkai",
+        trailer: "https://www.youtube.com/watch?v=xU47nhruN-Q",
+        cast: [
+            { name: "Ryunosuke Kamiki", role: "Taki" },
+            { name: "Mone Kamishiraishi", role: "Mitsuha" }
+        ],
         review: "Two strangers find themselves mysteriously linked through dreams.",
         delay: "0.9s"
     }
