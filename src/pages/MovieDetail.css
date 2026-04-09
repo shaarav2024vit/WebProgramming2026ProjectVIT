@@ -43,7 +43,7 @@
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--gold-accent);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     display: inline-block;
     padding: 0.5rem 1rem;
     background: rgba(0, 0, 0, 0.6);
@@ -51,6 +51,41 @@
     border: 1px solid var(--gold-muted);
     backdrop-filter: blur(4px);
     align-self: flex-start;
+}
+
+.movie-detail-meta {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.movie-badge {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--gold-muted);
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.movie-badge.highlight {
+    background: var(--gold-muted);
+    color: #fff;
+    border-color: var(--gold-accent);
+}
+
+.movie-director {
+    font-size: 1rem;
+    color: var(--text-main);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.director-label {
+    color: var(--text-muted);
+    margin-right: 0.5rem;
 }
 
 .movie-detail-description {

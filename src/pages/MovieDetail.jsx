@@ -25,13 +25,24 @@ export default function MovieDetail() {
                 </div>
                 <div className="movie-detail-info">
                     <h1 className="movie-detail-title">{movie.title}</h1>
-                    <div className="movie-detail-rating">Rating: {movie.rating}</div>
+                    <div className="movie-detail-meta">
+                        <span className="movie-badge">{movie.year}</span>
+                        <span className="movie-badge">{movie.length}</span>
+                        <span className="movie-badge">{movie.language}</span>
+                        <span className="movie-badge highlight">{movie.genre}</span>
+                    </div>
+                    <div className="movie-detail-rating">★ {movie.rating}</div>
+
+                    <div className="movie-director">
+                        <span className="director-label">Director:</span> {movie.director}
+                    </div>
+
                     <p className="movie-detail-description">
                         {movie.review}
                         <br /><br />
-                        (Full movie synopsis extended gracefully here within the dynamic aesthetic view.)
+                        Immerse yourself into the world of {movie.title}. With stunning visuals and breathtaking acting, this film takes you on a journey through the perspectives of its deeply written characters. Sit back and see why it received {movie.rating}.
                     </p>
-                    <Link to="/" className="back-link">&larr; Back to Movies</Link>
+                    <Link to="/" className="back-link">&larr; Back Highlights</Link>
                 </div>
             </div>
         </main>

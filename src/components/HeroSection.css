@@ -21,6 +21,7 @@
     text-shadow: 0 0 20px rgba(197, 160, 89, 0.4), 0 0 40px rgba(255, 255, 255, 0.1);
     background: linear-gradient(135deg, #fff 0%, rgb(197, 160, 89) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.2;
 }

@@ -22,17 +22,27 @@
 }
 
 .section-title {
-    font-size: 2rem;
-    color: var(--gold-accent);
+    font-size: 2.2rem;
+    color: var(--text-main);
     margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-bottom: 1px solid var(--gold-muted);
-    padding-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+    font-weight: 600;
     display: inline-block;
+    position: relative;
 
     /* Gentle float for section titles */
     animation: levitate var(--float-timing) ease-in-out infinite;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--gold-accent);
+    border-radius: 4px;
 }
 
 .movies-grid {

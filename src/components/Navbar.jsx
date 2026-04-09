@@ -37,6 +37,18 @@ const Navbar = () => {
                         <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>Home</NavLink></li>
                         <li><NavLink to="/latest" className={({ isActive }) => (isActive ? 'active' : '')}>Latest Reviews</NavLink></li>
                         <li><NavLink to="/top-rated" className={({ isActive }) => (isActive ? 'active' : '')}>Top Rated</NavLink></li>
+                        <li><NavLink to="/favorites" className={({ isActive }) => (isActive ? 'active' : '')}>Favorites</NavLink></li>
+                        <li className="dropdown">
+                            <span className="dropbtn">Genres ▼</span>
+                            <div className="dropdown-content">
+                                <NavLink to="/search?genre=Action">Action</NavLink>
+                                <NavLink to="/search?genre=Sci-Fi">Sci-Fi</NavLink>
+                                <NavLink to="/search?genre=Thriller">Thriller</NavLink>
+                                <NavLink to="/search?genre=Adventure">Adventure</NavLink>
+                                <NavLink to="/search?genre=Crime">Crime</NavLink>
+                                <NavLink to="/search?genre=Drama">Drama</NavLink>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
                 <form className="search-form" onSubmit={handleSearch}>
